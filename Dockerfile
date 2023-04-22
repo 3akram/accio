@@ -11,7 +11,4 @@ WORKDIR /app
 # Copy the scirpt
 COPY sync_db_tables.py .
 
-# Copy configuration file
-COPY config.yml .
-
 CMD ["python3", "sync_db_tables.py"]
