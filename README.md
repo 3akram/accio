@@ -1,4 +1,4 @@
-# Database Sync Tool
+# Accio Sync Tool
 
 > This is a tool for syncing tables between two PostgreSQL databases.
 
