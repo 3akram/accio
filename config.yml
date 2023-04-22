@@ -1,0 +1,28 @@
+# database configurations
+source:
+  host: "prod-clone-to-dev.cwlx6oiflynr.us-west-2.rds.amazonaws.com"
+  port: "5432"
+  database: "kommu_db"
+  user: "kommu_user"
+  password: "dbPassword"
+
+destination:
+  host: "host.docker.internal"
+  port: "5432"
+  database: "kommu_db"
+  user: "kommu_user"
+  password: "dbPassword"
+
+# tables and columns to sync
+#
+tables:
+  - name: contacts
+    primary_key: id
+    columns:
+      - name: address_book_id 
+  - name: contacts_user_links 
+    primary_key: id
+    columns:
+      - name: user_id 
+      - name: contact_id
+      - name: contact_order 
