@@ -54,4 +54,4 @@ if [ "$(docker ps -a -f name=$CONTAINER_NAME)" ]; then
 fi
 
 # run a new container
-docker run --name $CONTAINER_NAME -v $(pwd)/config.yml:/app/config.yml my-postgres-python-container
+docker run --name $CONTAINER_NAME -v $(pwd)/config.yml:/app/config.yml accio
