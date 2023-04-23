@@ -1,3 +1,5 @@
+[![Build and Push Docker Image](https://github.com/3akram/accio/actions/workflows/master.yml/badge.svg)](https://github.com/3akram/accio/actions/workflows/master.yml)
+
 # Accio Sync Tool
 
 > This is a tool for syncing tables between two PostgreSQL databases.
